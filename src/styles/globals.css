@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais adicionais podem ser adicionados abaixo */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb; /* Cor de fundo leve */
+    color: #111827; /* Cor do texto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Fonte para cabeçalhos */
+}
+
+a {
+    color: #3b82f6; /* Cor dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Espaçamento lateral */
+}

@@ -1,0 +1,26 @@
+{
+  "name": "blog-florescer-humano",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "autoprefixer": "^10.0.0",
+    "next": "latest",
+    "postcss": "^8.0.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.2",
+    "eslint": "^7.0.0",
+    "eslint-config-next": "latest",
+    "typescript": "5.8.3"
+  }
+}

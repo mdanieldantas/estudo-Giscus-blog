@@ -32,14 +32,15 @@ const BlogPost = ({ artigo }: { artigo: Artigo }) => {
     <div className="max-w-2xl mx-auto mt-8">
       <Giscus
         id="comments"
-        repo="SEU_USUARIO/SEU_REPOSITORIO"
-        repoId="SEU_REPO_ID"
-        category="General"
-        categoryId="SEU_CATEGORY_ID"
-        mapping="pathname"
+        repo="giscus/giscus-component"
+        repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
+        category="Announcements"
+        categoryId="DIC_kwDOF1L2fM4B-hVS"
+        mapping="specific"
+        term={`Artigo: ${artigo.titulo}`}
         reactionsEnabled="1"
         emitMetadata="0"
-        inputPosition="bottom"
+        inputPosition="top"
         theme="light"
         lang="pt"
         loading="lazy"

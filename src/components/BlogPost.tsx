@@ -1,4 +1,5 @@
 import { Artigo } from '../types';
+import Giscus from '@giscus/react';
 
 const BlogPost = ({ artigo }: { artigo: Artigo }) => {
   return (
@@ -27,6 +28,22 @@ const BlogPost = ({ artigo }: { artigo: Artigo }) => {
       <div className="prose max-w-none">
         <div dangerouslySetInnerHTML={{ __html: artigo.conteudo }} />
       </div>
+    </div>
+    <div className="max-w-2xl mx-auto mt-8">
+      <Giscus
+        id="comments"
+        repo="SEU_USUARIO/SEU_REPOSITORIO"
+        repoId="SEU_REPO_ID"
+        category="General"
+        categoryId="SEU_CATEGORY_ID"
+        mapping="pathname"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="bottom"
+        theme="light"
+        lang="pt"
+        loading="lazy"
+      />
     </div>
   );
 };
